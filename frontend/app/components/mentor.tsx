@@ -17,18 +17,11 @@ export default function Mentors() {
       experience: "2+ YEARS EXPERIENCE IN MENTORSHIP"
     },
     {
-      badge: "MANAGER",
+      badge: "BRANCH HEAD",
       initials: "AP",
       name: "Anish Pandey",
-      role: "MANAGER",
+      role: "BRANCH HEAD",
       experience: "1+ YEARS EXPERIENCE"
-    },
-    {
-      badge: "EQUITY MARKET",
-      initials: "RK",
-      name: "Rakesh Kumar",
-      role: "EQUITY MARKET",
-      experience: "3+ YEARS EXPERIENCE"
     }
   ];
 
@@ -40,13 +33,13 @@ export default function Mentors() {
         {/* Section Header */}
         <div className="mb-16">
           <span className="bg-yellow-100 text-yellow-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-            THE DESK
+            THE PROFESSOR
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#003b22] mt-4 mb-4">
-            Our Mentors <br/> trade every single day
+            Our Mentors <br/> 
           </h2>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-             NISM-certified mentors and a quant research team — the same people on our posters are the ones beside your terminal.
+             NISM-certified mentors  — Market ko predict nahi understand karna seekho.
           </p>
         </div>
 

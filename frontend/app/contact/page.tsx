@@ -60,6 +60,7 @@ export default function ContactPage() {
             <div className="bg-[#131f38] p-6 rounded-2xl border border-gray-800">
               <h3 className="text-xl font-bold mb-2 text-yellow-400">Contact Info</h3>
               <p className="text-gray-300 text-sm">📞 +91 7903190305</p>
+              <p className="text-gray-300 text-sm">📞 +91 6200743013</p>
               <p className="text-gray-300 text-sm mt-1">✉️ bullfinacademy@gmail.com</p>
             </div>
 

@@ -40,7 +40,7 @@ export default function Courses() {
             Curriculum
           </span>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#003b22] mt-6 mb-4 leading-tight">
-            Nine programs. One <br/> outcome: independence.
+            Five programs One <br/> outcome: independence.
           </h2>
           <p className="text-gray-500 text-lg">
             From your first candlestick to your first deployed algo — every course is a floating module in one connected journey.

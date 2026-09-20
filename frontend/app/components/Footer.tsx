@@ -6,10 +6,12 @@ export default function Footer() {
     <footer className="bg-[#002B19] text-gray-300 py-10 px-4 md:px-8 border-t-[4px] border-[#ffc107]">
       <div className="max-w-[90rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
         
-        {/* Pillar 1: Brand & Mission */}
+       {/* Pillar 1: Brand & Mission */}
         <div>
           <h2 className="text-2xl font-extrabold text-white mb-3 flex items-center gap-2">
-            🐂 Bullfin <span className="text-[#ffc107]">Academy</span>
+            {/* ✨ Yahan emoji ki jagah img tag laga diya gaya hai */}
+            <img src="/new-bull-1.png" alt="Bull Icon" className="w-8 h-8 md:w-10 md:h-10 object-contain drop-shadow-md" />
+            Bullfin <span className="text-[#ffc107]">Academy</span>
           </h2>
           <p className="text-xs text-gray-400 leading-snug pr-4">
             Bihar's Premier Trading Education Platform. We build independent, professional traders through NISM-certified mentorship and strict risk management.

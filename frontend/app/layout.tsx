@@ -35,7 +35,7 @@ export default function RootLayout({
         <Ticker /> 
         
         {/* ✨ YAHAN CHANGE KIYA HAI: Navbar ko mt-10 (margin-top) de diya taaki yeh Ticker ke neeche rahe */}
-        <div className="mt-10">
+        <div className="sticky top-10 z-[90] mt-10">
           <Navbar />
         </div>
         
