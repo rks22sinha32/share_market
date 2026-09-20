@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ticker Animation CSS */
+/* Updated Ticker Animation CSS */
+.ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+  background-color: #003b22; /* Dark green theme */
+  padding: 8px 0;
+  z-index: 50;
+  border-bottom: 2px solid #ffc107; /* Ek patli yellow line design ke liye */
+}
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-scroll 25s linear infinite;
+}
+.ticker__item {
+  display: inline-block;
+  padding: 0 2.5rem;
+  font-size: 14px;
+}
+@keyframes ticker-scroll {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
+}
