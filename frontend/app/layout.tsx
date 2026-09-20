@@ -33,7 +33,11 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         {/* Ticker sabse upar aa gaya! */}
         <Ticker /> 
-        <Navbar />
+        
+        {/* ✨ YAHAN CHANGE KIYA HAI: Navbar ko mt-10 (margin-top) de diya taaki yeh Ticker ke neeche rahe */}
+        <div className="mt-10">
+          <Navbar />
+        </div>
         
         {/* Main Content Area (flex-grow ensures it pushes footer to the bottom) */}
         <main className="flex-grow">

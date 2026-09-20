@@ -21,3 +21,5 @@ services:
     depends_on:
       - backend  # Iska matlab hai frontend tabhi start hoga jab backend ready ho
     restart: always
+
+   

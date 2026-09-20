@@ -1,5 +1,5 @@
 # Base image Node.js ka use kar rahe hain
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Container ke andar working directory set kar rahe hain
 WORKDIR /app

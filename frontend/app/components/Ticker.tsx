@@ -11,14 +11,14 @@ type Stock = {
 export default function Ticker() {
   const [stocks, setStocks] = useState<Stock[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false); // Naya: Error check karne ke liye
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     async function fetchLiveStocks() {
       try {
-        const response = await fetch("http://localhost:8000/api/live-stocks");
+        // ✨ Yahan IP address theek kar diya hai
+        const response = await fetch("http://16.113.27.187:8000/api/live-stocks");
         
-        // Agar response theek nahi aaya
         if (!response.ok) {
           throw new Error("Server ne data nahi diya");
         }
@@ -28,8 +28,8 @@ export default function Ticker() {
         setLoading(false);
       } catch (err) {
         console.error("API Error:", err);
-        setError(true); // Error aane par error state true kar denge
-        setLoading(false); // Aur loading band kar denge
+        setError(true);
+        setLoading(false);
       }
     }
 
@@ -38,23 +38,25 @@ export default function Ticker() {
 
   if (loading) {
     return (
-      <div className="ticker-wrap text-white text-center text-sm font-bold">
+      // ✨ Yahan fixed aur z-[100] add kar diya hai
+      <div className="ticker-wrap fixed top-0 left-0 w-full z-[100] bg-[#003b22] text-white text-center text-sm font-bold py-2">
         Connecting to Live Market...
       </div>
     );
   }
 
-  // Agar gadbad hui toh yeh dikhega
   if (error) {
     return (
-      <div className="ticker-wrap text-red-400 text-center text-sm font-bold">
+      // ✨ Yahan fixed aur z-[100] add kar diya hai
+      <div className="ticker-wrap fixed top-0 left-0 w-full z-[100] bg-[#003b22] text-red-400 text-center text-sm font-bold py-2">
         Failed to connect. Please check if backend is running!
       </div>
     );
   }
 
   return (
-    <div className="ticker-wrap">
+    // ✨ Yahan fixed aur z-[100] add kar diya hai
+    <div className="ticker-wrap fixed top-0 left-0 w-full z-[100] bg-[#003b22]">
       <div className="ticker">
         {stocks.map((stock, index) => (
           <div key={index} className="ticker__item">
