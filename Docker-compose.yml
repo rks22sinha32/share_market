@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  # 1. Backend Service (FastAPI)
+  backend:
+    build: ./backend
+    container_name: bullfin_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      # Yeh sabse zaroori line hai! Isse aapka database safe rahega
+      - ./backend/academy.db:/app/academy.db
+    restart: always
+
+  # 2. Frontend Service (Next.js)
+  frontend:
+    build: ./frontend
+    container_name: bullfin_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend  # Iska matlab hai frontend tabhi start hoga jab backend ready ho
+    restart: always
