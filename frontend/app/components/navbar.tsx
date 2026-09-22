@@ -24,11 +24,11 @@ export default function Navbar() {
       <Link href="/" onClick={handleHomeClick} className="text-decoration-none outline-none">
         {/* Logo Section */}
         <div className="flex items-center gap-3 md:gap-4">
-          {/* Professional Circular Badge Design */}
+         {/* Professional Circular Badge Design (White background aur border hata diya gaya hai) */}
           <img
-            src="/bullfin-new-logo.png"
+            src="/bull-image.png"
             alt="Bullfin Academy Logo"
-            className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white object-contain p-1 shadow-md border border-gray-200"
+            className="w-12 h-12 md:w-14 md:h-14 object-contain"
           />
 
           {/* Yahan humne flex-col laga diya hai taaki text ek ke neeche ek aaye */}
