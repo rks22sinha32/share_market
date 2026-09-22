@@ -13,7 +13,7 @@ export default function Testimonials() {
   ]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/reviews")
+    fetch("https://share-market-aizb.onrender.com/api/reviews")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {

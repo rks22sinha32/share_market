@@ -81,6 +81,14 @@ class Enrollment(BaseModel):
 # 3. FASTAPI ENDPOINTS
 # ==========================================
 
+@app.get("/")
+def welcome():
+    return {
+        "message": "Welcome to Bullfin Academy API! 🚀", 
+        "status": "Server is Running Perfectly!",
+        "database": "Turso Cloud Connected ✅"
+    }
+
 @app.get("/api/live-stocks")
 def get_live_stocks():
     stock_symbols = [

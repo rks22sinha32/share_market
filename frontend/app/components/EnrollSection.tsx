@@ -17,7 +17,7 @@ export default function EnrollSection() {
     setEnrollStatus("Submitting your request...");
 
     try {
-      const res = await fetch("http://localhost:8000/api/enrollments", {
+      const res = await fetch("https://share-market-aizb.onrender.com/api/enrollments", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(enrollData),

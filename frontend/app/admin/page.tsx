@@ -26,11 +26,11 @@ export default function AdminDashboard() {
   const fetchAdminData = async () => {
     setLoading(true);
     try {
-      const enrollRes = await fetch("http://localhost:8000/api/enrollments");
+      const enrollRes = await fetch("https://share-market-aizb.onrender.com/api/enrollments");
       const enrollData = await enrollRes.json();
       setEnrollments(enrollData);
 
-      const reviewRes = await fetch("http://localhost:8000/api/reviews");
+      const reviewRes = await fetch("https://share-market-aizb.onrender.com/api/reviews");
       const reviewData = await reviewRes.json();
       setReviews(reviewData);
     } catch (err) {
@@ -48,7 +48,7 @@ export default function AdminDashboard() {
   const handleDeleteEnrollment = async (id: number) => {
     if (!confirm("Kya aap sach mein is student enrollment को delete karna chahte hain?")) return;
     try {
-      const res = await fetch(`http://localhost:8000/api/enrollments/${id}`, {
+      const res = await fetch(`https://share-market-aizb.onrender.com/api/enrollments/${id}`, {
         method: "DELETE",
       });
       if (res.ok) {
@@ -63,7 +63,7 @@ export default function AdminDashboard() {
   const handleDeleteReview = async (id: number) => {
     if (!confirm("Kya aap sach mein is review ko delete karna chahte hain?")) return;
     try {
-      const res = await fetch(`http://localhost:8000/api/reviews/${id}`, {
+      const res = await fetch(`https://share-market-aizb.onrender.com/api/reviews/${id}`, {
         method: "DELETE",
       });
       if (res.ok) {

@@ -18,7 +18,7 @@ export default function Courses() {
   useEffect(() => {
     async function fetchCourses() {
       try {
-        const response = await fetch("http://localhost:8000/api/courses");
+        const response = await fetch("https://share-market-aizb.onrender.com/api/courses");
         const data = await response.json();
         setCourseList(data);
         setLoading(false);

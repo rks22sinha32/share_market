@@ -13,7 +13,7 @@ export default function ReviewForm() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:8000/api/reviews", {
+      const response = await fetch("https://share-market-aizb.onrender.com/api/reviews", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

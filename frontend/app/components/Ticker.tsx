@@ -17,7 +17,7 @@ export default function Ticker() {
     async function fetchLiveStocks() {
       try {
         // ✨ Yahan IP address theek kar diya hai
-        const response = await fetch("http://localhost:8000/api/live-stocks");
+        const response = await fetch("https://share-market-aizb.onrender.com/api/live-stocks");
         
         if (!response.ok) {
           throw new Error("Server ne data nahi diya");
