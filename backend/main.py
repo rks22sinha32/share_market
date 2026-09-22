@@ -126,16 +126,55 @@ def get_live_stocks():
 def get_courses():
     return [
         {
+
             "level": "ALL LEVELS", "duration": "8 weeks", "title": "Price Action Mastery",
+
             "desc": "Read raw markets without indicators.",
+
             "topics": ["Market structure", "Supply & demand zones", "Liquidity concepts", "Risk Management"]
+
         },
-        # ... baaki courses wahi hain ...
+
         {
+
+            "level": "INTERMEDIATE", "duration": "6 weeks", "title": "Forex Trading",
+
+            "desc": "Trade global currencies with precision.",
+
+            "topics": ["Major & cross pairs", "Sessions & liquidity", "Carry & news trading", "Risk per trade models"]
+
+        },
+
+        {
+
+            "level": "ADVANCED", "duration": "10 weeks", "title": "Algo Trading",
+
+            "desc": "Build systems that trade for you.",
+
+            "topics": ["Strategy design", "Backtesting engines", "Execution APIs", "Walk-forward validation"]
+
+        },
+
+        {
+
+            "level": "INTERMEDIATE", "duration": "8 weeks", "title": "Options Trading",
+
+            "desc": "Greeks, spreads and adjustments.",
+
+            "topics": ["Option Chain", "Option Greek", "Bull Put Spred", "Strike"]
+
+        },
+
+        {
+
             "level": "BEGINNER", "duration": "6 weeks", "title": "Investment & Wealth",
+
             "desc": "Compound wealth the boring, proven way.",
+
             "topics": ["Fundamental screening", "Valuation models", "SIP & asset allocation", "Tax-efficient investing"]
+
         }
+
     ]
 
 # --- REVIEWS API (Turso version) ---
